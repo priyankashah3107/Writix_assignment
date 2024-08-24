@@ -7,7 +7,7 @@ import Sidebar from './Sidebar'
 const Features = () => {
   return (
     <> 
-    <div className='dark:bg-[#21241d] dark:text-white'>
+    <div className='dark:bg-[#21241d] dark:text-white w-full'>
 
     <div className=' ml-6 mr-6 md:ml-32 md:mr-32 p-4 pl-6 lg:pl-20 lg:p-10  flex flex-col items-center lg:flex-row gap-6 lg:gap-10 mt-4 lg:mt-24 '>
     <Input type="email" placeholder="Search Bar" />

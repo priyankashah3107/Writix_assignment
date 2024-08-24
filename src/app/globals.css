@@ -167,7 +167,7 @@ line-height: 24px; /* 150% */
 
 .btnn{
   display: flex;
-width: 190px;
+width: 130px;
 padding: 12px 15px;
 justify-content: center;
 align-items: center;
@@ -209,7 +209,7 @@ line-height: 24px; /* 150% */
 }
 .card {
 display: flex;
-width: 270px;
+width: 190px;
 padding: 40px;
 flex-direction: column;
 align-items: flex-start;
@@ -223,7 +223,7 @@ cursor: pointer;
 
 .card_title{
   color: #000;
-  width: 150px;
+  width: 120px;
 /* h3 mob */
 /* font-family: "Space Grotesk"; */
 font-size: 26px;
