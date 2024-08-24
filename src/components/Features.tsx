@@ -1,16 +1,24 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Card from './Card'
 import { Input } from "@/components/ui/input"
 import { DropdownMenuCheckboxes } from './DropdownMenuDemo'
 import Sidebar from './Sidebar'
 
 const Features = () => {
+  const [title, setTitle] = useState("")
+  console.log(title)
   return (
     <> 
     <div className='dark:bg-[#21241d] dark:text-white w-full'>
 
     <div className=' ml-6 mr-6 md:ml-32 md:mr-32 p-4 pl-6 lg:pl-20 lg:p-10  flex flex-col items-center lg:flex-row gap-6 lg:gap-10 mt-4 lg:mt-24 '>
-    <Input type="email" placeholder="Search Bar" />
+    {/* <Input type="email" placeholder="Search Bar" /> */}
+    <input  type='text' placeholder= {title ? title : "Search bar"} 
+    className='p-2 w-full border border-black' 
+    value={title}
+    onChange={(e: any) => setTitle(e.target.value)}
+    />
     {/* <DropdownMenuDemo /> */}
     <DropdownMenuCheckboxes />
       </div>  
