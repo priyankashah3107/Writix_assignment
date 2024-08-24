@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { Sun } from 'lucide-react';
+import { ModeToggle } from './ModeToggle';
 const nav = [
   { id: 1, name: "About us" },
   { id: 2, name: "Services" },
@@ -15,7 +17,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="relative cursor-pointer ">
+    <div className="relative cursor-pointer dark:bg-[#21241D] dark:text-white ">
       <div className="flex items-center justify-between  p-4 pl-6  lg:pl-8 lg:p-10">
           <h1 className="logo lg:w-[219px] h-[36px] font-bold text-2xl md:text-4xl">Writix</h1>
         <div className="lg:hidden">
@@ -60,6 +62,8 @@ const Navbar = () => {
             </p>
           ))}
         </nav>
+        {/* <Sun /> */}
+        <ModeToggle />
       </div>
 
       {menuOpen && (
